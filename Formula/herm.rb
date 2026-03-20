@@ -5,21 +5,21 @@
 class Herm < Formula
   desc "A containerized coding agent CLI"
   homepage "https://github.com/aduermael/herm"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aduermael/herm/releases/download/v0.2.0/herm_0.2.0_darwin_amd64.tar.gz"
-      sha256 "802235389257d90676e11a4fd353d551e15475a245147be529af4417699d5800"
+      url "https://github.com/aduermael/herm/releases/download/v0.3.0/herm_0.3.0_darwin_amd64.tar.gz"
+      sha256 "172596ef53cf41b2ca199fa8e35b759ade9bbe95624831839bf06da15cdd1d4c"
 
       define_method(:install) do
         bin.install "herm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aduermael/herm/releases/download/v0.2.0/herm_0.2.0_darwin_arm64.tar.gz"
-      sha256 "0fd4b97b1dd92400a2e724441a49d93a2cb0d181bf57477634c3610a2453bd61"
+      url "https://github.com/aduermael/herm/releases/download/v0.3.0/herm_0.3.0_darwin_arm64.tar.gz"
+      sha256 "0dda0bacf62b05fb47972d962a3fa8583b87e5b1d7650999309e3a35ec84041f"
 
       define_method(:install) do
         bin.install "herm"
@@ -29,15 +29,15 @@ class Herm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aduermael/herm/releases/download/v0.2.0/herm_0.2.0_linux_amd64.tar.gz"
-      sha256 "dc8058fde3a71518122bd2c724b45a7fdcaab0a6fbe2f3a2cce5f886cbd59c55"
+      url "https://github.com/aduermael/herm/releases/download/v0.3.0/herm_0.3.0_linux_amd64.tar.gz"
+      sha256 "da518dbf203498ac140ec2aacd49dc201b87a086cb1b9c443cbcb5fc35eeb9cc"
       define_method(:install) do
         bin.install "herm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aduermael/herm/releases/download/v0.2.0/herm_0.2.0_linux_arm64.tar.gz"
-      sha256 "698bfadc7368df808d54e9ea41596b4650631bd657f7c46f75bb44db8604a6a3"
+      url "https://github.com/aduermael/herm/releases/download/v0.3.0/herm_0.3.0_linux_arm64.tar.gz"
+      sha256 "9001187c26ef26edc668b15d3f954cc1429697f8702e6455e707f0f96879de7f"
       define_method(:install) do
         bin.install "herm"
       end
